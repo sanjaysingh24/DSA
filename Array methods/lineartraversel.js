@@ -31,4 +31,17 @@ function checkarraysorted(array){
         }
     }
 }
-checkarraysorted(array)
+// checkarraysorted(array)
+
+function checkdays(month){
+    let days =[1,3,4,5,7,8,10,12];
+    if(days.includes(month)){
+        console.log("31 days");
+        return;
+    }
+    else{
+        console.log("30 days or 28/29 days");
+        return;
+    }
+}
+checkdays(6);
