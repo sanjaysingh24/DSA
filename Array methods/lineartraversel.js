@@ -65,15 +65,42 @@ function checkcheck(number){
 //checkcheck(123);
 
 // here is a refine method of doing this we use set and convert the number to string and then array
-function checkduplicatedigit(numbers){
-    let number = numbers.toString().split('');
-    let numberSet = new Set(number);
-    return numberSet.size !== numbers.length;
-}
-const result = checkduplicatedigit(12344);
-if(result){
-    console.log("There are no duplicate digits");
+// function checkduplicatedigit(numbers){
+//     let number = numbers.toString().split('');
+//     let numberSet = new Set(number);
+//     return numberSet.size !== numbers.length;
+// }
+// const result = checkduplicatedigit(12344);
+// if(result){
+//     console.log("There are no duplicate digits");
+// }
+// else{
+//     console.log("There are duplicate digits");
+// }
+
+
+// take a 3 digit number and check if the middle one is largest,smallest of neigther
+
+function checkmiddle(){
+    let number = 243;
+    let lastdigit = number%10;
+
+    number = Math.floor(number/10);
+
+    let middledigit = number%10;
+    
+    number = Math.floor(number/10);
+    let firstdigit = number%10;
+    if(middledigit>firstdigit && middledigit>lastdigit)
+{
+    console.log("Middle digit is largest");
+}    
+else if(middledigit<firstdigit && middledigit<lastdigit){
+    console.log("Middle digit is smallest");
 }
 else{
-    console.log("There are duplicate digits");
+    console.log("Middle digit is neither largest nor smallest");
 }
+    
+}
+checkmiddle();
