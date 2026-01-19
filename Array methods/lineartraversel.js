@@ -44,4 +44,36 @@ function checkdays(month){
         return;
     }
 }
-checkdays(6);
+// checkdays(6);
+
+
+
+// this one is only for the three digits if there is a constant number of digit so we can use this one
+function checkcheck(number){
+    let lastdigit = number%10;
+    number = Math.floor(number/10);
+    let secondlast = number%10;
+    number = Math.floor(number/10);
+    let thirdlast = number%10;
+    if(lastdigit == secondlast || lastdigit == thirdlast || secondlast == thirdlast){
+        console.log("There are duplicate digits");
+    }else{
+        console.log("No duplicate digits");
+    }
+
+}
+//checkcheck(123);
+
+// here is a refine method of doing this we use set and convert the number to string and then array
+function checkduplicatedigit(numbers){
+    let number = numbers.toString().split('');
+    let numberSet = new Set(number);
+    return numberSet.size !== numbers.length;
+}
+const result = checkduplicatedigit(12344);
+if(result){
+    console.log("There are no duplicate digits");
+}
+else{
+    console.log("There are duplicate digits");
+}
