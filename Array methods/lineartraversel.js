@@ -78,29 +78,50 @@ function checkcheck(number){
 //     console.log("There are duplicate digits");
 // }
 
+//one more method to solve this one 
+function solveonemethod(number){
+    let seen = new Set();
+    while(number>0){
+        let digit = number%10;
+        if(seen.has(digit)){
+            return false;
+        }
+        seen.add(digit);
+        number = Math.floor(number/10);
+        
+    }
+    return true;
+}
 
-// take a 3 digit number and check if the middle one is largest,smallest of neigther
-
-function checkmiddle(){
-    let number = 243;
-    let lastdigit = number%10;
-
-    number = Math.floor(number/10);
-
-    let middledigit = number%10;
-    
-    number = Math.floor(number/10);
-    let firstdigit = number%10;
-    if(middledigit>firstdigit && middledigit>lastdigit)
-{
-    console.log("Middle digit is largest");
-}    
-else if(middledigit<firstdigit && middledigit<lastdigit){
-    console.log("Middle digit is smallest");
+const myresult = solveonemethod(1234);
+if(myresult){
+    console.log("No duplicate digits");
 }
 else{
-    console.log("Middle digit is neither largest nor smallest");
+    console.log("There are duplicate digits");
 }
+// take a 3 digit number and check if the middle one is largest,smallest of neigther
+
+// function checkmiddle(){
+//     let number = 243;
+//     let lastdigit = number%10;
+
+//     number = Math.floor(number/10);
+
+//     let middledigit = number%10;
     
-}
-checkmiddle();
+//     number = Math.floor(number/10);
+//     let firstdigit = number%10;
+//     if(middledigit>firstdigit && middledigit>lastdigit)
+// {
+//     console.log("Middle digit is largest");
+// }    
+// else if(middledigit<firstdigit && middledigit<lastdigit){
+//     console.log("Middle digit is smallest");
+// }
+// else{
+//     console.log("Middle digit is neither largest nor smallest");
+// }
+    
+// }
+// checkmiddle();
