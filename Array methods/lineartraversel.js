@@ -93,13 +93,13 @@ function solveonemethod(number){
     return true;
 }
 
-const myresult = solveonemethod(1234);
-if(myresult){
-    console.log("No duplicate digits");
-}
-else{
-    console.log("There are duplicate digits");
-}
+// const myresult = solveonemethod(1234);
+// if(myresult){
+//     console.log("No duplicate digits");
+// }
+// else{
+//     console.log("There are duplicate digits");
+// }
 // take a 3 digit number and check if the middle one is largest,smallest of neigther
 
 // function checkmiddle(){
@@ -125,3 +125,24 @@ else{
     
 // }
 // checkmiddle();
+
+
+//here the number of digits is constant
+function checkfirstandlast(number){
+    let lastdigit = number%10;
+    number = Math.floor(number/10);
+    let third = number%10
+    number = Math.floor(number/10)
+    let second = number%10
+    number = Math.floor(number/10)
+    let first = number%10;
+    if(first == lastdigit){
+        console.log("First and last digit are same");
+    }
+    else{
+        console.log("First and last digit are different");
+    
+    }
+}
+
+checkfirstandlast(1232);
