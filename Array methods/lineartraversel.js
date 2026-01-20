@@ -145,4 +145,18 @@ function checkfirstandlast(number){
     }
 }
 
-checkfirstandlast(1232);
+// checkfirstandlast(1232);
+
+//one best approach  to convert the number into string
+
+function checkfirstandlastone(number){
+    let numstr = number.toString();
+    if(numstr[0]===numstr[numstr.length-1]){
+        console.log("First and last digit are same");
+
+    }
+    else{
+        console.log("First and last digit are different");
+    }
+}
+checkfirstandlastone(12316789291);
