@@ -177,3 +177,46 @@ function checkdigit(number){
 }
 
 // checkdigit(1);
+
+function checkmultipleof7(number){
+    let numstr = number.toString();
+    if(numstr[numstr.length-1]==='7'){
+        console.log("last digit is 7");
+    }
+    else if(number%7===0){
+        console.log("number is multiple of 7");
+    }
+
+    else{
+        console.log("number is not multiple of 7 or last digit is not 7");
+    }
+    
+}
+// checkmultipleof7(770);
+
+// Take coordinates (x, y) and determine which quadrant the point lies in
+
+function checkquadrant(x,y){
+    if(x>0 &&y>0){
+        console.log("Point lies in First Quadrant");
+    }
+    if(x<0 && y>0){
+        console.log("Point lies in Second Quadrant");
+    }
+    if(x<0 && y<0){
+        console.log("Point lies in Third Quadrant");
+    }
+    if(x>0 &&y<0){
+        console.log("Point lies in Fourth Quadrant");
+    }
+    if(x===0 && y===0){
+        console.log("Point lies at the Origin");
+    }
+    if(x==0 && y!==0){
+        console.log("Point lies on Y axis");
+    }
+    if(x!==0 && y==0){
+        console.log("Point lies on X axis");
+    }
+}
+checkquadrant(-7,10);
