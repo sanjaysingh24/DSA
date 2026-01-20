@@ -159,4 +159,21 @@ function checkfirstandlastone(number){
         console.log("First and last digit are different");
     }
 }
-checkfirstandlastone(12316789291);
+
+// checkfirstandlastone(12316789291);
+
+
+//check wheter the digit is single digit double digit or multidigit
+function checkdigit(number){
+    if(number>=0 && number<=9){
+        console.log("single digit number")
+    }
+    else if(number>=10 && number <=99){
+        console.log("double digit number")
+    }
+    else{
+        console.log("multidigit number")
+    }
+}
+
+// checkdigit(1);
