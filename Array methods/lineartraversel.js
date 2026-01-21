@@ -292,3 +292,30 @@ function isperfectsqure(number){
 
 
 // implement binary search
+// it is a type of seaching algorithm that works on sorted arrays  to find the target element by repeatedly dividing the search interval in half
+// first it divide the array into two halves and compare the target value with the middle element of the array if the element is less then the middle element then it search in the left half otherwise it search in the right half this process is repeated until the target element is found or the search interval is empty
+
+function binarysearch(array,target){
+    let low = 0;
+    let high = array.length-1;
+    while(low<=high)
+        {
+     let mid = Math.floor((low+high)/2);
+     if(array[mid]===target){
+        console.log("Element found at index: " +mid);
+        return;
+     }
+     else if(array[mid]<target){
+    low = mid+1;
+
+     }
+     else{
+        high= mid-1;
+     }
+
+
+    }
+}
+
+// let arrays = [2,4,5,6,7,8,9,12,14,15];
+// binarysearch(arrays,12);
