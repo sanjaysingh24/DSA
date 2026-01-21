@@ -264,4 +264,31 @@ function twoangles(a,b){
     let thirdangle = 180-(a+b);
     console.log("The third angle is: " +thirdangle);
 }
-twoangles(0,0);
+// twoangles(0,0);
+
+function isperfectsqure(number){
+    if(number<0){
+        console.log("Negative numbers cannot be perfect squares");
+        return false;
+    }
+    for(let i = 0 ;i*i<=number;i++){
+        
+        if(i*i===number){
+            
+            return true;
+        }
+        console.log("hello");
+    }
+    return false;
+}
+// const result = isperfectsqure(25);
+// if(result){
+//     console.log("Number is a perfect square");
+// }
+// else{
+//     console.log("Number is not a perfect square");
+
+// }
+
+
+// implement binary search
