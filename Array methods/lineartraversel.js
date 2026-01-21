@@ -319,3 +319,33 @@ function binarysearch(array,target){
 
 // let arrays = [2,4,5,6,7,8,9,12,14,15];
 // binarysearch(arrays,12);
+
+// check perfect square using binary search 
+
+function isperfectsquare(number){
+    if(number<0){
+        console.log("Negative numbers cannot be perfect squares");
+        return false;
+    }
+   let low = 1;
+   let high = number;
+   while(low<=high){
+    let mid = Math.floor((low+high)/2);
+    let square = mid*mid;
+    if(square===number){
+        console.log("Number is a perfect square");
+        return true;
+    }
+    else if(square<number){
+        low = mid+1;
+    }
+    else{
+
+     high = mid-1;
+    }
+    console.log("hello");
+   }
+
+}
+const result = isperfectsquare(25);
+console.log(result);
