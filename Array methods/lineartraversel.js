@@ -219,4 +219,49 @@ function checkquadrant(x,y){
         console.log("Point lies on X axis");
     }
 }
-checkquadrant(-7,10);
+// checkquadrant(-7,10);
+
+function divideamount(amount){
+    if(amount %100!==0){
+        console.log("Amount should be in multiples of 100");
+        return;
+
+    }
+    let notes2000 = Math.floor(amount/2000);
+    amount = amount % 2000;
+
+    let notes500 = Math.floor(amount/500);
+    amount = amount % 500;
+
+    let notes200 = Math.floor(amount/200);
+    amount = amount % 200;
+
+    let notes100 =Math.floor(amount/100);
+    console.log("2000 notes: " +notes2000);
+    console.log("500 notes: " +notes500);
+    console.log("200 notes: " +notes200);
+    console.log("100 notes: " +notes100);
+}
+// divideamount(47000);
+
+
+// check the number is lies between 100 and 999
+function checknumberlies(number){
+    if(number>=100 && number<=999){
+        console.log("Number lies between 100 and 999");
+    }
+    else{
+        console.log("Number does not lie between 100 and 999");
+    }
+}
+
+// checknumberlies(1050);
+
+
+// check two angles of a triangle are given find the third angle
+function twoangles(a,b){
+   
+    let thirdangle = 180-(a+b);
+    console.log("The third angle is: " +thirdangle);
+}
+twoangles(0,0);
