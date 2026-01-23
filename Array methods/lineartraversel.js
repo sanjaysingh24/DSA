@@ -383,3 +383,10 @@ else{
 }
 
 }
+
+// takenumber(21);
+function takethree(a,b,c){
+    let median = a + b + c - Math.max(a, b, c) - Math.min(a, b, c);
+    console.log("The median is: " +median);
+}
+takethree(7,3,5);
