@@ -1,4 +1,4 @@
-//1- method is linearTraversal
+
 // a normal brute force method to traverse an array linearly specially for when we need to find the max minimum sum,count or validation in a single pass
 
 //example find the largest number in an array
