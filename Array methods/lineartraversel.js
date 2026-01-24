@@ -362,7 +362,6 @@ function checkChar(ch) {
     }
 }
 
-// checkChar('&'); // letter
 
 function takenumber(number){
     if(number%3==0 && number%5==0){
