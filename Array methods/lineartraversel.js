@@ -347,9 +347,7 @@ function isperfectsquare(number){
    }
 
 }
-// const result = isperfectsquare(25);
-// console.log(result);
-// take  a charachter  and check whether it is a letter , a digit  or neither 
+
 function checkChar(ch) {
     if (ch >= 'a' && ch <= 'z' || ch >= 'A' && ch <= 'Z') {
         console.log("It is a letter");
