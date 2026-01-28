@@ -411,4 +411,15 @@ function takeincomeandage(income,age){
         console.log("Not eligible for tax");
     }
 }
-takeincomeandage(600000,25);
+// takeincomeandage(600000,25);
+
+//take two number and check both are positive and sum of both are greater than 100
+function checkbothnumber(a,b){
+    if(a>0 && b>0 && (a+b)>100){
+        console.log("Both numbers are positive and sum is greater than 100");
+    }
+    else{
+        console.log("Condition not met");
+    }
+}
+checkbothnumber(60,50);
