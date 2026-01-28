@@ -386,4 +386,29 @@ function takethree(a,b,c){
     let median = a + b + c - Math.max(a, b, c) - Math.min(a, b, c);
     console.log("The median is: " +median);
 }
-takethree(7,3,5);
+// takethree(7,3,5);
+
+//take 24 hours  and minutes print wheather it is am or pm
+
+function checkamorpm(hours,minutes){
+    if(hours<0 || hours>23 || minutes<0 || minutes>59){
+        console.log("Invalid time");
+        return;
+    }
+    if(hours>=0 && hours<12){
+        console.log("Time is in AM");
+    }
+    else{
+        console.log("Time is in PM");
+    }
+}
+// checkamorpm(14,30);
+function takeincomeandage(income,age){
+    if(age>18 && income>500000){
+        console.log("Eligible for tax");
+    }
+    else{
+        console.log("Not eligible for tax");
+    }
+}
+takeincomeandage(600000,25);
