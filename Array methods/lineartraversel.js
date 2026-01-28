@@ -422,4 +422,27 @@ function checkbothnumber(a,b){
         console.log("Condition not met");
     }
 }
-checkbothnumber(60,50);
+// checkbothnumber(60,50);
+//take a single digit number and print its string
+function printsringofnumber(number){
+    let numberstr = ['Zero','One','Two','Three','Four','Five','Six','Seven','Eight','Nine'];
+    if(number>=0 && number<=9){
+        console.log(numberstr[number]);
+    }
+    else{
+        console.log("Not a single digit number");
+    }
+}
+// printsringofnumber(5);
+
+
+function checkweekdayorweekend(day){
+    if(day>=1 && day<=5){
+        console.log("Weekday");
+    }
+    else{
+        console.log("Weekend");
+    }
+}
+
+checkweekdayorweekend(6);
