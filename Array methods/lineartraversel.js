@@ -458,4 +458,26 @@ else{
     console.log("weak password");
 }
 }
-checkpass("pass1222323");
+// checkpass("pass1222323");
+
+
+///level 5
+// Take coordinates (x, y) and check if the point lies on the X-axis, Y-axis, or at the
+//origin.
+
+
+function checkcoordinates(x,y){
+    if(x===0 && y ===0){
+        console.log("Point lies at the Origin");
+    }
+    if(x>0 && y===0){
+        console.log("Point lies on X axis");
+    }
+    else if(x===0 && y!==0){
+        console.log("Point lies on Y axis");
+    }else{
+        console.log("Point lies neither on axis nor origin");
+    }
+}
+
+checkcoordinates(0,10);
