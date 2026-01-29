@@ -494,3 +494,18 @@ function checkpythagorean(a,b,c){
 }
 
 // checkpythagorean(3,4,5);
+
+//Take day and month and check if it forms a valid calendar date (ignoring leap years).
+function checkvalidatedate(day,month){
+    let daysinmonth = [31,28,31,30,31,30,31,31,30,31,30,31];
+    if(month<1 || month>12){
+        console.log("Invalid month");
+        return;
+    }
+    if(day<1 || day>daysinmonth[month-1]){
+        console.log("Invalid day for the given month");
+        return;
+    }
+    console.log("Valid date");
+}
+checkvalidatedate(29,3);
