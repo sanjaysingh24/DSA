@@ -445,4 +445,17 @@ function checkweekdayorweekend(day){
     }
 }
 
-checkweekdayorweekend(6);
+// checkweekdayorweekend(6);
+
+
+//take a password check that basic rules
+function checkpass(password){
+    const passwordvalid = password.length >=8 && /\d/.test(password)
+if(passwordvalid){
+    console.log("strong password");
+}
+else{
+    console.log("weak password");
+}
+}
+checkpass("pass1222323");
