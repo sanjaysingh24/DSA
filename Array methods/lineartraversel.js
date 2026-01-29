@@ -480,4 +480,17 @@ function checkcoordinates(x,y){
     }
 }
 
-checkcoordinates(0,10);
+// checkcoordinates(0,10);
+
+//Take three numbers and check if they can form a Pythagorean triplet
+
+function checkpythagorean(a,b,c){
+    if(a*a +b*b == c*c || a*a + c*c == b*b || b*b + c*c == a*a){
+        console.log("Numbers form a Pythagorean triplet");
+    }
+    else{
+        console.log("Numbers do not form a Pythagorean triplet");
+    }
+}
+
+// checkpythagorean(3,4,5);
