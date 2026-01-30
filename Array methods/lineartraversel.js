@@ -524,4 +524,17 @@ function checkangletype(hour,minutes){
     console.log("The angle between hour and minute hand is: " +angle + " degrees");
     
 }
-checkangletype(3,30);
+// checkangletype(3,30);
+
+// check the number are airthmetic progression means the difference between the consecutive number is constant
+
+function arithmeticprogression(a,b,c){
+    if((b-a)===(c-b)){
+        console.log("Numbers are in arithmetic progression");
+    }
+    else{
+        console.log("Numbers are not in arithmetic progression");
+    }
+}
+
+arithmeticprogression(2,4,6);
