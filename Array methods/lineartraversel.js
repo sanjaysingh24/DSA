@@ -508,4 +508,20 @@ function checkvalidatedate(day,month){
     }
     console.log("Valid date");
 }
-checkvalidatedate(29,3);
+// checkvalidatedate(29,3);
+
+function checkangletype(hour,minutes){
+    if(hour<0 || hour>23 || minutes<0 || minutes>59){
+        {
+            console.log("Invalid time");
+            return;
+        }   
+    }
+    let hourangle = (hour%12)*30 + (minutes/60)*30;
+    let minuteangle = minutes*6;
+    let angle = Math.abs(hourangle - minuteangle);  
+    angle = Math.min(angle,360-angle);
+    console.log("The angle between hour and minute hand is: " +angle + " degrees");
+    
+}
+checkangletype(3,30);
