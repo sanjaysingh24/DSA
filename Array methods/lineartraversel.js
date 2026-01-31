@@ -550,4 +550,18 @@ const geometricprogression = (a,b,c)=>{
 }
 
 
-geometricprogression(3,6,9);
+//geometricprogression(3,6,9);
+//check first and second sum
+// function checkthree(number){
+//     let lastdigit = number%10;
+//     number = Math.floor(number/10);
+//     // console.log(number);
+//     let secondlastdigit = number%10;
+//     number = Math.floor(number/10);
+//     if(lastdigit+secondlastdigit===number){ 
+//         console.log("First and second digit sum equals third digit");
+//     }else{
+//        console.log("Number is not equals third digit")
+//     }
+// }
+checkthree(123)
