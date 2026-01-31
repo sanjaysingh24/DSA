@@ -586,4 +586,29 @@ function takeineger(number){
     }
 }
 
-takeineger(456);
+// takeineger(456);
+
+
+function taketwodate(dateA,monthA,dateb,monthb){
+    if(monthA<monthb){
+        console.log('date a comes first')
+    }
+    else if(monthA>monthb){
+        console.log('date b comes first')
+    }
+    else{
+        if(dateA<dateb){
+            console.log('date a comes first')
+        }
+        else if(dateA>dateb){
+            console.log('date b comes first')
+            
+            
+        }
+        else{
+            console.log('both dates are same')
+        }
+    }
+
+}
+taketwodate(10,12,12,8)
