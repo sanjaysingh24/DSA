@@ -611,4 +611,16 @@ function taketwodate(dateA,monthA,dateb,monthb){
     }
 
 }
-taketwodate(10,12,12,8)
+// taketwodate(10,12,12,8)
+
+function takeayear(year){
+ // find the corresponding century
+ if(year<=0){
+    console.log("year must be  greater than 0")
+    return;
+ }
+ let findcentury = Math.ceil(year/100);
+ console.log(`${findcentury} Century`);
+ 
+}
+takeayear(1990);
