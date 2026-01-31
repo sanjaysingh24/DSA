@@ -537,4 +537,17 @@ function arithmeticprogression(a,b,c){
     }
 }
 
-arithmeticprogression(2,4,6);
+// arithmeticprogression(2,4,6);
+
+//check geometeric progression
+const geometricprogression = (a,b,c)=>{
+    if(b/a===c/b){
+        console.log("Numbers are in geometric progression");
+    }
+    else{
+        console.log("Numbers are not in geometric progression");
+    }
+}
+
+
+geometricprogression(3,6,9);
