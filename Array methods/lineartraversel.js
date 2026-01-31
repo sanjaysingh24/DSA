@@ -564,4 +564,26 @@ const geometricprogression = (a,b,c)=>{
 //        console.log("Number is not equals third digit")
 //     }
 // }
-checkthree(123)
+//checkthree(123)
+// take a integer and check if there sum is greater than there product
+
+function takeineger(number){
+    let sum =0;
+    let product = 1;
+    while(number>0){
+        let digit = number%10;
+        sum += digit;
+        product *= digit;
+        number = Math.floor(number/10);
+    }
+    console.log("total sum",sum);
+    console.log("total product",product);
+    if(sum>product){
+        console.log("sum is greater than its product")
+    }
+    else{
+     console.log("sum is less than its product")    
+    }
+}
+
+takeineger(456);
