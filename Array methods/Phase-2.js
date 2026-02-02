@@ -33,4 +33,35 @@ function alloddunumber(){
         i++;
     }
 }
-alloddunumber();
+// alloddunumber();
+
+//print number  from 10 down to 1
+function downnumber(num){
+    while(num>0){
+        console.log(num);
+        num--;
+    }
+
+}
+// downnumber(10);
+
+function givennumber(n){
+    let i=1;
+    while(i<=10){
+        console.log(`${n} * ${i}   = ${n*i}`);
+        i++;
+    }
+}
+// givennumber(2)
+
+//print the sum of first n natural number
+function sumofnnumber(n){
+    let i;
+    let sum=0;
+    for(i=1;i<=n;i++){
+        sum +=i;
+    }
+    console.log(sum)
+
+}
+sumofnnumber(5)
