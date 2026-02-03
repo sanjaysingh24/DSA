@@ -64,4 +64,55 @@ function sumofnnumber(n){
     console.log(sum)
 
 }
-sumofnnumber(5)
+//sumofnnumber(5)
+
+//sum of all the even number
+function sumofalleven(n){
+    let i=0;
+    let sum=0;
+    while(i<n){
+        if(i%2==0){
+            sum+=i
+        }
+        i++;
+    }
+    console.log(sum)
+}
+// sumofalleven(5);
+
+function sumofallodd(n){
+    let i=0;
+    let sum=0;
+    while(i<n){
+        if(i%2!=0){
+            sum+=i
+        }
+        i++;
+    }
+    console.log(sum)
+
+}
+// sumofallodd(3)
+
+function printfactorial(n){
+    
+    let fact=1;
+    while(n>0){
+        fact*=n;
+        n--;
+    }
+    console.log(fact)
+}
+//printfactorial(3);
+// product of the digit number
+function productgiven(n){
+    let prod=1;
+    while(n>0){
+        let lastdigit = n%10;
+        prod*=lastdigit;
+        n = Math.floor(n/10)
+        
+    }
+    console.log(prod);
+}
+// productgiven(123)
