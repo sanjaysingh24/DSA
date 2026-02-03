@@ -159,9 +159,9 @@ function checknumberpalindrom(n){
 }
 
 const result = checknumberpalindrom(4334);
-if(result){
-    console.log("number is palindrome")
-}
-else{
-    console.log("number is not palindrome")
-}
+// if(result){
+//     console.log("number is palindrome")
+// }
+// else{
+//     console.log("number is not palindrome")
+// }
