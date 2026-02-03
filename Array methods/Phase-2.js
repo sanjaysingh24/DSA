@@ -149,7 +149,7 @@ function checknumberpalindrom(n){
         num = num*10+lastdigit;
         n= Math.floor(n/10);
     }
-    console.log(num);
+    
 
     if(num===original){
         return true
@@ -165,3 +165,17 @@ const result = checknumberpalindrom(4334);
 // else{
 //     console.log("number is not palindrome")
 // }
+
+
+//sum of digit of the number
+function sumofdigit(number){
+    let num=0;
+    while(number>0){
+        let lastdigit = number%10;
+        num+=lastdigit;
+        number = Math.floor(number/10);
+    }
+  console.log(num);
+}
+
+sumofdigit(1234)
