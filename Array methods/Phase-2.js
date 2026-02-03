@@ -127,4 +127,41 @@ function countnumberindigit(n){
     console.log(count);
     
 }
-countnumberindigit(2343)
+// countnumberindigit(2343)
+
+function printrevers(n){
+    let num=0;
+    while(n>0){
+          let lastdigit = n%10;
+          num = num*10+lastdigit;
+          n  = Math.floor(n/10);
+    }
+    console.log(num) //reverse number
+}
+// printrevers(1234)
+
+function checknumberpalindrom(n){
+    let original=n;
+    let num=0;
+    while(n>0){
+        //reverse process
+        let lastdigit = n%10;
+        num = num*10+lastdigit;
+        n= Math.floor(n/10);
+    }
+    console.log(num);
+
+    if(num===original){
+        return true
+    }else{
+        return false
+    }
+}
+
+const result = checknumberpalindrom(4334);
+if(result){
+    console.log("number is palindrome")
+}
+else{
+    console.log("number is not palindrome")
+}
