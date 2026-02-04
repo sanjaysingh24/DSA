@@ -260,8 +260,27 @@ if (n <= 1) return false;
     return true
  }
 }
-for(let num=1;num<=100;num++){
-    if(printallprime(num)){
-        console.log(num)
-    }
+// for(let num=1;num<=100;num++){
+//     if(printallprime(num)){
+//         console.log(num)
+//     }
+// }
+
+//fibonacci 
+function fibonacci(number){
+   let i=0;
+   let a=0;
+   let b=1;
+   let next;
+   while(i<number)
+   {
+    console.log(a)
+    next = a+b;
+    a=b
+    b=next;
+    i++
+   }
+  
+   
 }
+fibonacci(25);
