@@ -248,3 +248,20 @@ function primenumber(number) {
 
 // const resultprime = primenumber(31);
 // console.log(resultprime); // false
+//print prime number between 1 and 100
+function printallprime(n){
+if (n <= 1) return false;
+  if (n === 2) return true;
+  if (n % 2 === 0) return false;
+ for(let i=3;i*i<=n;i+=2){
+    if(n % i ===0){
+        return false
+    }
+    return true
+ }
+}
+for(let num=1;num<=100;num++){
+    if(printallprime(num)){
+        console.log(num)
+    }
+}
