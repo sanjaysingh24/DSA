@@ -178,4 +178,31 @@ function sumofdigit(number){
   console.log(num);
 }
 
-sumofdigit(1234)
+// sumofdigit(1234)
+function armstrongnumber(number){
+    let l = String(number).length;
+    if(l<=1){
+        console.log("a single number is already there own armstrong number")
+        return true
+    }
+    let sum =0;
+    let orginal = number;
+    while(number>0){
+        let lastdigit = number%10;
+        sum+=lastdigit**l;
+        number  = Math.floor(number/10);
+    }
+    if(orginal===sum){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+const armresult = armstrongnumber(1)
+if(armresult){
+    console.log("given number is armstrongnumber")
+}
+else{
+    console.log("given number is not a armstrong number")
+}
