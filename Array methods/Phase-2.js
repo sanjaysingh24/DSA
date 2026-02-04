@@ -229,4 +229,4 @@ function findperfectnumber(number){
         console.log("this is a perfect number")
     }
 }
-findperfectnumber(0);
+// findperfectnumber(0);
