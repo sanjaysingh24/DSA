@@ -199,10 +199,34 @@ function armstrongnumber(number){
         return false;
     }
 }
-const armresult = armstrongnumber(1)
-if(armresult){
-    console.log("given number is armstrongnumber")
+// const armresult = armstrongnumber(1)
+// if(armresult){
+//     console.log("given number is armstrongnumber")
+// }
+// else{
+//     console.log("given number is not a armstrong number")
+// }
+
+
+function findperfectnumber(number){
+    if(number<=1)
+{
+    console.log("number can not be negative")
+    return;
+}   
+ let original = number;
+    let sum=0;
+    let i=1;
+    while(i<number){
+        if(number%i===0){
+        sum+=i
+
+        }
+        i++;
+    }
+    
+    if(original===sum){
+        console.log("this is a perfect number")
+    }
 }
-else{
-    console.log("given number is not a armstrong number")
-}
+findperfectnumber(0);
