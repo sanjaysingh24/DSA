@@ -272,6 +272,7 @@ function fibonacci(number){
    let a=0;
    let b=1;
    let next;
+   let sum=0
    while(i<number)
    {
     console.log(a)
@@ -283,4 +284,21 @@ function fibonacci(number){
   
    
 }
-fibonacci(25);
+// fibonacci(25);
+function sumfibonacci(n){
+    let i=0;
+    let a=0;
+    let b =1;
+    let next;
+    let sum=0;
+    while(i<n){
+        console.log(a);
+        sum+=a;
+        next = a+b;
+        a=b;
+        b=next;
+        i++;
+    }
+    console.log(sum);
+}
+sumfibonacci(5);
