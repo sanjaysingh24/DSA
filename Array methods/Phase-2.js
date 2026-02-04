@@ -230,3 +230,21 @@ function findperfectnumber(number){
     }
 }
 // findperfectnumber(0);
+
+function primenumber(number) {
+  if (number <= 1) return false;
+  if (number === 2) return true;
+  if (number % 2 === 0) return false;
+
+  let i = 3;
+  while (i * i <= number) {
+    if (number % i === 0) {
+      return false;
+    }
+    i += 2;
+  }
+  return true;
+}
+
+// const resultprime = primenumber(31);
+// console.log(resultprime); // false
