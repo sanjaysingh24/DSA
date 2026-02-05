@@ -320,4 +320,16 @@ function cubes(n){
         i++
     }
 }
-cubes(10);
+// cubes(10);
+
+function printandb(a,b){
+
+    while(a<b){
+       if(a%7==0){
+        console.log(a);
+       }
+        a++;
+    }
+
+}
+printandb(10,70);
