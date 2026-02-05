@@ -301,6 +301,14 @@ function sumfibonacci(n){
     }
     console.log(sum);
 }
-sumfibonacci(5);
+// sumfibonacci(5);
 
 //tommmorow level 3
+function squares(n){
+    let i=1;
+    while(i<n){
+        console.log(i*i);
+        i++;
+    }
+}
+squares(10);
