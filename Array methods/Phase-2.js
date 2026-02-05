@@ -306,9 +306,18 @@ function sumfibonacci(n){
 //tommmorow level 3
 function squares(n){
     let i=1;
-    while(i<n){
+    while(i<=n){
         console.log(i*i);
         i++;
     }
 }
-squares(10);
+// squares(10);
+
+function cubes(n){
+    let i=1;
+    while(i<n){
+        console.log(i*i*i);
+        i++
+    }
+}
+cubes(10);
