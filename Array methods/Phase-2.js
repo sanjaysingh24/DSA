@@ -355,4 +355,15 @@ function findlcm(a,b){
     return (a*b)/hcfofgcd(a,b);
 }
 const rr = findlcm(12,18);
-console.log(rr)
+// console.log(rr)
+//print all factors
+function factors(n){
+    let i=1;
+    while(i<=n){
+        if(n%i===0){
+            console.log(i);
+        }
+     i++;
+    }
+}
+factors(25);
