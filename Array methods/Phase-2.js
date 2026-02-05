@@ -332,4 +332,27 @@ function printandb(a,b){
     }
 
 }
-printandb(10,70);
+// printandb(10,70);
+//find hcf  of two number using loops
+function hcfofgcd(a,b){
+    // let r = a%b;
+     //let gcd = a%r
+   while(b!=0){
+    let r = a%b;
+    a=b;
+    b=r
+   }
+   return a;
+   console.log(a,"greatest common divisor")
+
+}
+
+
+// hcfofgcd(48,18);
+
+//find the lcm
+function findlcm(a,b){
+    return (a*b)/hcfofgcd(a,b);
+}
+const rr = findlcm(12,18);
+console.log(rr)
