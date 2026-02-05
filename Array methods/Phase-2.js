@@ -358,6 +358,7 @@ const rr = findlcm(12,18);
 // console.log(rr)
 //print all factors
 function factors(n){
+    console.time("myFunc");
     let i=1;
     while(i<=n){
         if(n%i===0){
@@ -365,5 +366,6 @@ function factors(n){
         }
      i++;
     }
+    console.timeEnd("myFunc");
 }
-factors(25);
+factors(420);
