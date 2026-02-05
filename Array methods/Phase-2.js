@@ -360,12 +360,47 @@ const rr = findlcm(12,18);
 function factors(n){
     console.time("myFunc");
     let i=1;
+    let sum=0;
     while(i<=n){
         if(n%i===0){
-            console.log(i);
+            
+            sum+=i;
         }
      i++;
     }
+    console.log(sum,'sum of the all numbers');
     console.timeEnd("myFunc");
 }
-factors(420);
+// factors(12);
+//strong number factorial ka sum ==number
+
+    function strongnumber(number){
+        let i=1;
+        let sum=1;
+        while(number>0){
+            sum*=number;
+            number--;
+        }
+        return sum;
+
+    }
+
+
+    function strongnum(num){
+    
+        let original = num;
+        let sum=0;
+        while(num>0){
+            let digit  = num%10;
+            sum+=strongnumber(digit);
+            num = Math.floor(num/10)
+      
+        }
+      if(sum===original){
+        console.log("Strong number")
+      }
+      else{
+        console.log("not a strong number")
+      }
+    }
+    strongnum(145)
