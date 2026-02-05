@@ -404,3 +404,6 @@ function factors(n){
       }
     }
     strongnum(145)
+
+
+//strong number means digit of factorial number + sum ===original number
