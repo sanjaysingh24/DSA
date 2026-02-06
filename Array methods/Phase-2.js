@@ -407,3 +407,17 @@ function factors(n){
 
 
 //strong number means digit of factorial number + sum ===original number
+
+// what is arithmetic progression(a,d)
+//print n terms of arithmetic progression(a,p)
+function arithmeticprogreesion(n){
+    let a = 2
+    let d =3
+    let ap = a+(n-1)*d //last term of the n the 
+    console.log(ap);// last of ap
+    for(let i =0;i<n;i++){
+        let term = a+i*d;
+        console.log(term)
+    }
+}
+arithmeticprogreesion(10);
