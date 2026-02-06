@@ -445,4 +445,7 @@ function geometricProgression(n){
         term*=r;
     }
 }
-geometricProgression(6)
+// geometricProgression(6)
+
+//level 4
+//pattern printing(stars & number)
