@@ -403,7 +403,7 @@ function factors(n){
         console.log("not a strong number")
       }
     }
-    strongnum(145)
+    // strongnum(145)
 
 
 //strong number means digit of factorial number + sum ===original number
@@ -420,4 +420,29 @@ function arithmeticprogreesion(n){
         console.log(term)
     }
 }
-arithmeticprogreesion(10);
+//arithmeticprogreesion(10);
+
+// ✅ Step-by-Step Logic
+
+// First term se start karo → term = a
+
+// Loop chalao → n times
+
+// Har iteration me:
+
+// Term print karo
+
+// Next term = term × r
+
+function geometricProgression(n){
+    let a = 2;
+    let r = 3;
+
+    let term =a;
+
+    for(let i =0;i<n;i++){
+        console.log(term);
+        term*=r;
+    }
+}
+geometricProgression(6)
