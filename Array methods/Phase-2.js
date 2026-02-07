@@ -449,3 +449,10 @@ function factors(n){
 
 //level 4
 //pattern printing(stars & number)
+function star(n){
+  let i=0;
+  for(i=0;i<n;i++){
+    console.log("*")
+  }
+}
+star(5);
