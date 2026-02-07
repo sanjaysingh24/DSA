@@ -434,17 +434,17 @@ function arithmeticprogreesion(n){
 
 // Next term = term × r
 
-function geometricProgression(n){
-    let a = 2;
-    let r = 3;
+// function geometricProgression(n){
+//     let a = 2;
+//     let r = 3;
 
-    let term =a;
+//     let term =a;
 
-    for(let i =0;i<n;i++){
-        console.log(term);
-        term*=r;
-    }
-}
+//     for(let i =0;i<n;i++){
+//         console.log(term);
+//         term*=r;
+//     }
+// }
 // geometricProgression(6)
 
 //level 4
