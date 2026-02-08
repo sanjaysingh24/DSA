@@ -509,4 +509,14 @@ function evenstarpattern(n){
         console.log(p);
     }
 }
-evenstarpattern(10)
+// evenstarpattern(10)
+function oddstarpatter(n){
+    for(let i=1;i<=n;i++){
+      let p="";
+      for(let j=0;j<2*i+1;j++){
+        p+="*"
+      }
+      console.log(p);
+    }
+}
+oddstarpatter(10);
