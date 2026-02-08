@@ -537,3 +537,21 @@ function centeredpyramid(n){
     }
 }
 // centeredpyramid(4);
+//alertnative start with spaces
+function alertnativestar(n){
+    for(let i=0;i<n;i++){
+        let p="";
+        for(let j=0;j<n-i-1;j++){
+            p+="b"
+        }
+        for(let k=0;k<=i;k++){
+            if(k%2==0){
+                p+="*"
+            }
+            else{
+                p+="b"
+            }
+        }
+        console.log(p);
+    }
+}alertnativestar(4)
