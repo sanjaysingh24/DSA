@@ -410,17 +410,17 @@ function factors(n){
 
 // what is arithmetic progression(a,d)
 //print n terms of arithmetic progression(a,p)
-// function arithmeticprogreesion(n){
-//     let a = 2
-//     let d =3
-//     let ap = a+(n-1)*d //last term of the n the 
-//     console.log(ap);// last of ap
-//     for(let i =0;i<n;i++){
-//         let term = a+i*d;
-//         console.log(term)
-//     }
-// }
-//arithmeticprogreesion(10);
+function arithmeticprogreesion(n){
+    let a = 2
+    let d =3
+    let ap = a+(n-1)*d //last term of the n the 
+    console.log(ap);// last of ap
+    for(let i =0;i<n;i++){
+        let term = a+i*d;
+        console.log(term)
+    }
+}
+// arithmeticprogreesion(10);
 
 // ✅ Step-by-Step Logic
 
@@ -451,8 +451,19 @@ function factors(n){
 //pattern printing(stars & number)
 function star(n){
   let i=0;
+  let j=0;
+ 
+  
   for(i=0;i<n;i++){
-    console.log("*")
+     let star="";
+     for(j=0;j<n;j++){
+        star+="*";
+     }
+     console.log(star);
+   
   }
+ 
+  
+
 }
 star(5);
