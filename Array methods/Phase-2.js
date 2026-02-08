@@ -499,3 +499,14 @@ for(i=0;i<n;i++){
 }
 }
 // rightdirectionstar(4);
+
+function evenstarpattern(n){
+    for(let i=1;i<=n;i++){
+        let p=""
+        for(let j=0;j<2*i;j++){
+            p+="*"
+        }
+        console.log(p);
+    }
+}
+evenstarpattern(10)
