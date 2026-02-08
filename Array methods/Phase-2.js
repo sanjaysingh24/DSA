@@ -554,4 +554,17 @@ function alertnativestar(n){
         }
         console.log(p);
     }
-}alertnativestar(4)
+}
+// alertnativestar(4)
+
+//tommorow print number with increasing
+function increasing(n){
+    for(let i =1;i<=n;i++){
+        let p="";
+        for(let j=1;j<=i;j++){
+            p+=j
+        }
+        console.log(p);
+    }
+}
+increasing(5);
