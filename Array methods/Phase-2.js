@@ -536,4 +536,4 @@ function centeredpyramid(n){
      console.log(p);
     }
 }
-centeredpyramid(10);
+// centeredpyramid(4);
