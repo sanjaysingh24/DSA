@@ -466,4 +466,36 @@ function star(n){
   
 
 }
-star(5);
+// star(5);
+//increasing star
+function increasingstar(n){
+    let i=0;
+    let j=0;
+    
+    for(i=0;i<n;i++){
+        let p="";
+        for(j=0;j<=i;j++){
+           p+=" * "
+        }
+        console.log(p);
+    }
+}
+// increasingstar(5)
+
+function rightdirectionstar(n){
+let i=0;
+let j=0;let k=0;
+for(i=0;i<n;i++){
+    let s="";
+    for(j=n;j>i;j--){
+        s+=" ";
+    }
+    for(k=0;k<=i;k++){
+        s+="*"
+        
+    }
+    console.log(s);
+   
+}
+}
+// rightdirectionstar(4);
