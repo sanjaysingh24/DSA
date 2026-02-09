@@ -586,9 +586,26 @@ function incrementnumber(n){
         for(j=1;j<=i;j++){
             
             num++;
+            
             p+=num +" ";
         }
         console.log(p);
     }
 }
-incrementnumber(5);
+// incrementnumber(5);
+
+
+//14
+function incrementtillzero(n){
+    let num=0;
+    for(let i =1;i<=n;i++){
+        let p="";
+        for(let j = 1;j<=i;j++){
+            num++;
+            p+=num%10 +" "
+            
+        }
+        console.log(p);
+    }
+}
+incrementtillzero(5);
