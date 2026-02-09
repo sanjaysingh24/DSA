@@ -608,4 +608,30 @@ function incrementtillzero(n){
         console.log(p);
     }
 }
-incrementtillzero(5);
+// incrementtillzero(5);
+//alertnative one
+function alertnative(n){
+    for(let i=0;i<n;i++){
+        let p="";
+        for(let j=0;j<=i;j++){
+            p+=(i+j)%2 +" ";
+        }
+        console.log(p);
+    }
+}
+// alertnative(5);
+function alphabate(n){
+    let num = 64;
+    for(let i=0;i<n;i++){
+         let p="";
+        
+         for(let j=0;j<=i;j++){
+            num++;
+            p+=String.fromCharCode(num)+" ";
+         }
+         
+
+        console.log(p);
+    }
+}
+alphabate(5);
