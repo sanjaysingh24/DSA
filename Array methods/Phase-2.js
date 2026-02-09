@@ -567,4 +567,28 @@ function increasing(n){
         console.log(p);
     }
 }
-increasing(5);
+//print repeated number per row;
+function repeated(n){
+    for(let i =1;i<=n;i++){
+        let p="";
+        for(let j=1;j<=i;j++){
+            p+=i
+        }
+        console.log(p);
+    }
+}
+// repeated(5);
+
+function incrementnumber(n){
+     let num=0;
+    for(let i=1;i<=n;i++){
+        let p="";
+        for(j=1;j<=i;j++){
+            
+            num++;
+            p+=num +" ";
+        }
+        console.log(p);
+    }
+}
+incrementnumber(5);
