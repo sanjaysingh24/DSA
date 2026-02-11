@@ -676,4 +676,17 @@ function alphabatereversetringle(n){
        console.log(p);
     }
 }
-alphabatereversetringle(5)
+// alphabatereversetringle(5)
+function incrementnumber(n){
+   
+    for(let i=1;i<=n;i++){
+        let p ="";
+        for(let j =1;j<=i;j++){
+            
+            p+=j+" "
+           
+        }
+        console.log(p);
+    }
+}
+// incrementnumber(5);
