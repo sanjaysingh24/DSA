@@ -1,8 +1,4 @@
-//looping  & patters(iteration & flow)
-// goal master loops, iteration and dry-run thinking
-// Topics covered: for, while, nested loops, break/continue, mathematical series
-//Target-question 40-50
-//level-1 basic looping (introductory)
+
 //1- print numbers from 1 to 10
 function printnumber(){
     let i=1;
@@ -664,6 +660,7 @@ function alphabateincre2(n){
     }
 }
 // alphabateincre2(5)
+
 function alphabatereversetringle(n){
     let num=65;
     for(let i=1;i<=n;i++){
