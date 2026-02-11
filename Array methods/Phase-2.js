@@ -690,3 +690,20 @@ function incrementnumber(n){
     }
 }
 // incrementnumber(5);
+//question 21
+function increpyramid(n){
+    for(let i =1;i<=n;i++){
+        let p="";
+        for(let j =i;j<n;j++){
+            p+=" "
+        }
+        for(let k=1;k<=i;k++){
+            p+=k
+        }
+        for(let l=i-1;l>=1;l--){
+            p+=l
+        }   
+        console.log(p);
+    }
+}
+increpyramid(5)
