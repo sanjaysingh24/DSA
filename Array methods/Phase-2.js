@@ -664,3 +664,19 @@ function alphabateincre2(n){
     }
 }
 // alphabateincre2(5)
+function alphabatereversetringle(n){
+    let num=65;
+    for(let i=1;i<=n;i++){
+        let p="";
+        for(let j=i;j<n;j++){
+            p+=" "
+        }
+       for(let k=1;k<=(2*i-1);k++){
+        p+=String.fromCharCode(num)+" "
+        num++;
+       }
+
+       console.log(p);
+    }
+}
+alphabatereversetringle(5)
