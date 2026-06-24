@@ -1,5 +1,5 @@
 // first  insert at specific position 
-let arr = [1,2,4,3,5,6]
+let arr = [1,2,3,5,6]
 function insertionatspecific(arr,pos,element){
     for(let i =arr.length-1;i>=pos-1;i--){
         
@@ -26,4 +26,29 @@ function insertioninmid(arr,element){
 console.log(arr)
 }
 
-insertioninmid(arr,30)
+// insertioninmid(arr,30)
+
+
+//insertion at first
+
+function insertionatfirst(arr,element){
+    for(let i = arr.length-1;i>=0;i--){
+        arr[i+1]=arr[i]
+    }
+    arr[0]=element
+    console.log(arr)
+}
+// insertionatfirst(arr,-12)
+
+//sorted insertion according to the element
+function sortedinsertion(arr,element){
+    let i;
+    for(i = arr.length-1;i>=0 && arr[i]>=element;i--){
+        arr[i+1]=arr[i];
+    
+    }
+    arr[i]=element;
+    console.log(arr)
+
+}
+sortedinsertion(arr,4)
