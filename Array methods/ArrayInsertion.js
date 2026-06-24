@@ -62,4 +62,28 @@ function insertionatend(arr,element){
     console.log(arr)
 }
 
-insertionatend(arr,12)
+// insertionatend(arr,12)
+
+// now deletion operation
+
+//deletion on the specific position
+function deletespecific(arr,pos){
+    let i;
+    for(i=pos-1;i<arr.length-1;i++){
+        arr[i]=arr[i+1]
+        
+    }
+    arr.length--;
+    console.log(arr)
+}
+// deletespecific(arr,3)
+
+function deleteonbegining(arr){
+   let i;
+   for(i=0;i<arr.length-1;i++){
+    arr[i]=arr[i+1]
+   }
+   arr.length--;
+   console.log(arr)
+}
+deleteonbegining(arr)
