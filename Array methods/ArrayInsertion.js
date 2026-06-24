@@ -51,4 +51,15 @@ function sortedinsertion(arr,element){
     console.log(arr)
 
 }
-sortedinsertion(arr,4)
+// sortedinsertion(arr,4)
+
+function insertionatend(arr,element){
+    let i;
+    for(i=0;i<arr.length;i++){
+
+    }
+    arr[i]=element
+    console.log(arr)
+}
+
+insertionatend(arr,12)
