@@ -633,32 +633,32 @@ function alphabate(n){
 // alphabate(5);
 
 //17 print the continuosly the alphabates in whole line but change in the row
-function alphabateincre(n){
-    let num = 65;
+// function alphabateincre(n){
+//     let num = 65;
 
-    for(let i=0;i<n;i++){
-        let p="";
-        for(let j =0;j<=i;j++){
-            p+=String.fromCharCode(num)+" ";
-        }
-        num++;
-        console.log(p);
-    }
-}
+//     for(let i=0;i<n;i++){
+//         let p="";
+//         for(let j =0;j<=i;j++){
+//             p+=String.fromCharCode(num)+" ";
+//         }
+//         num++;
+//         console.log(p);
+//     }
+// }
 // alphabateincre(5);
 
 // now print same but one alphabate increment when the row shift to the next line
 
-function alphabateincre2(n){
-    let num = 65;
-    for(let i = 0;i<n;i++){
-        let p ="";
-        for(let j=0;j<=i;j++){
-            p+=String.fromCharCode(num+j)+" ";
-        }
-        console.log(p);
-    }
-}
+// function alphabateincre2(n){
+//     let num = 65;
+//     for(let i = 0;i<n;i++){
+//         let p ="";
+//         for(let j=0;j<=i;j++){
+//             p+=String.fromCharCode(num+j)+" ";
+//         }
+//         console.log(p);
+//     }
+// }
 // alphabateincre2(5)
 
 function alphabatereversetringle(n){
