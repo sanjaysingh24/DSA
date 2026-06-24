@@ -86,4 +86,7 @@ function deleteonbegining(arr){
    arr.length--;
    console.log(arr)
 }
-deleteonbegining(arr)
+// deleteonbegining(arr)
+//create 2d array
+arr = [[1,2,3,4],[5,6,7,8]]
+console.log(arr[0][2])
