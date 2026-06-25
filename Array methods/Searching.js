@@ -30,6 +30,7 @@ function binarySearch(arr,target){
     let h = arr.length-1;
     while (l <= h){
         let middle = Math.floor((l+h)/2);
+        console.log(middle);
         if(arr[middle]===target){
             return middle;
         }
