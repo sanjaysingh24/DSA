@@ -29,5 +29,18 @@ function getMaximum(arr){
     return max
 }
 
-const result = getMaximum(arr)
+// const result = getMaximum(arr)
+// console.log(result)
+
+
+// average 
+function getaverage(arr){
+    let total=0;
+    for(let i =0;i<arr.length;i++){
+        total = total+arr[i]
+    }
+    return Math.floor(total/arr.length)
+}
+
+const result = getaverage(arr)
 console.log(result)
