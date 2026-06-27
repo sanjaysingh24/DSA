@@ -19,6 +19,7 @@ function setMethod(index,element){
 // const result = setMethod(2,30)
 // console.log(result)
 // maximum function 
+
 function getMaximum(arr){
     let max =arr[0];
     for(let i =0;i<arr.length;i++){
@@ -42,5 +43,43 @@ function getaverage(arr){
     return Math.floor(total/arr.length)
 }
 
-const result = getaverage(arr)
+// const result = getaverage(arr)
+// console.log(result)
+
+
+function getmin(arr){
+    let min=arr[0]
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]<min){
+            min=arr[i]
+        }
+    }
+    return min
+}
+
+// const result = getmin(arr)
+// console.log(result)
+
+// reversing a array 
+
+function reversearray(arr){
+    for(let i=arr.length-1;i>=0;i--){
+        console.log(arr[i])
+    }
+
+}
+// reversearray(arr)
+
+
+//function reversing the array with another method
+function reverseanothemethod(arr){
+   for (let i=0,j=arr.length-1; i<j;i++,j--){
+        let temp  = arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+   }
+   return arr
+}
+
+result = reverseanothemethod(arr)
 console.log(result)
