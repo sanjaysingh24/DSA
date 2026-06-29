@@ -70,7 +70,7 @@ function reversearray(arr){
 }
 // reversearray(arr)
 
-
+// reversing the array using  the swap method
 //function reversing the array with another method
 function reverseanothemethod(arr){
    for (let i=0,j=arr.length-1; i<j;i++,j--){
@@ -81,5 +81,5 @@ function reverseanothemethod(arr){
    return arr
 }
 
-result = reverseanothemethod(arr)
-console.log(result)
+// result = reverseanothemethod(arr)
+// console.log(result)
