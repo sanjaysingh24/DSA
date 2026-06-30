@@ -1,7 +1,7 @@
 // get set avg min max function on array
 //get the element on the given index
 
-let arr=[4,3,4,211,11,1,230]
+let arr=[-14,32,-42,52,-61,71,80]
 function getmethod(index){
     return arr[index]
    
@@ -83,3 +83,41 @@ function reverseanothemethod(arr){
 
 // result = reverseanothemethod(arr)
 // console.log(result)
+
+
+// check array is sorted or not
+
+function checkarraysorted(arr){
+    for(let i = 0;i<arr.length;i++){
+        if(arr[i]>arr[i+1]){
+            return false;
+        }
+        return true;
+    }
+}
+// const rlt = checkarraysorted(arr)
+// console.log(rlt)
+
+
+
+// negative one side positive one side
+
+function sortingarray(arr){
+    let i =0;
+    let temp;
+    let j = arr.length-1;
+    while(i<j){
+        while(arr[i]<0){i++;}
+        while(arr[j]>0){j--;}
+    
+    temp =arr[i];
+    arr[i]=arr[j];
+    arr[j]=temp;    
+    }
+    
+    
+    console.log(arr)
+
+}
+
+sortingarray(arr)
