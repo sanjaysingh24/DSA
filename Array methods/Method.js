@@ -120,4 +120,5 @@ function sortingarray(arr){
 
 }
 
-sortingarray(arr)
+// sortingarray(arr)
+
