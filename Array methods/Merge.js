@@ -73,4 +73,18 @@ function findMissingElement(arr){
    console.log("missing element is ",missingelement)
 }
 
-findMissingElement(a)
+// findMissingElement(a)
+// find only for one single missing element from the unseries sorted array
+let arr = [6,7,8,9,10,11,13,14,15,16,17]
+function findMissingElementunsorted(arr){
+    let diff = arr[0]-0;
+    for(let i =0;i<arr.length;i++){
+        if(arr[i]-i!==diff){
+            console.log("missing element is ",i+diff)
+            break;
+        }
+    }
+    
+
+}
+findMissingElementunsorted(arr)
