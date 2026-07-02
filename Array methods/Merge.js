@@ -75,7 +75,7 @@ function findMissingElement(arr){
 
 // findMissingElement(a)
 // find only for one single missing element from the unseries sorted array
-let arr = [6,7,8,9,10,11,13,14,15,16,17]
+// let arr = [6,7,8,9,10,11,13,14,15,16,17]
 function findMissingElementunsorted(arr){
     let diff = arr[0]-0;
     for(let i =0;i<arr.length;i++){
@@ -87,4 +87,19 @@ function findMissingElementunsorted(arr){
     
 
 }
-findMissingElementunsorted(arr)
+// findMissingElementunsorted(arr)
+
+let arr = [6,7,8,9,10,11,15,16,17,18]
+// if there are multuple missing elements then there is a simple solution for that either we can use the hash method and we can use the above one but a small additional code change
+function findmultipleMissing(arr){
+    let diff = arr[0]-0;
+    for(let i = 0;i<arr.length;i++){
+        if(arr[i]-i!==diff){
+            while(diff<arr[i]-i){
+                console.log("missing element is ",i+diff);
+                diff++;
+            }
+        }
+    }
+}
+findmultipleMissing(arr)
