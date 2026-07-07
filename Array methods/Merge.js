@@ -61,32 +61,32 @@ return result;
 //lets find missing element from the sorted array  its continuous array  so we have easy solution for this one
 //continuous sorted array missing element 
 let a =[1,2,3,4,5,6,8,9,10]
-function findMissingElement(arr){
-    let last = arr.length;
-    let sum=0;
-    let n = arr[last-1];
-    let total = n* (n+1)/2;
-   for(let i =0;i<last;i++){
-      sum = sum + arr[i];
-   }
-   let missingelement = total-sum;
-   console.log("missing element is ",missingelement)
-}
+// function findMissingElement(arr){
+//     let last = arr.length;
+//     let sum=0;
+//     let n = arr[last-1];
+//     let total = n* (n+1)/2;
+//    for(let i =0;i<last;i++){
+//       sum = sum + arr[i];
+//    }
+//    let missingelement = total-sum;
+//    console.log("missing element is ",missingelement)
+// }
 
 // findMissingElement(a)
 // find only for one single missing element from the unseries sorted array
 // let arr = [6,7,8,9,10,11,13,14,15,16,17]
-function findMissingElementunsorted(arr){
-    let diff = arr[0]-0;
-    for(let i =0;i<arr.length;i++){
-        if(arr[i]-i!==diff){
-            console.log("missing element is ",i+diff)
-            break;
-        }
-    }
+// function findMissingElementunsorted(arr){
+//     let diff = arr[0]-0;
+//     for(let i =0;i<arr.length;i++){
+//         if(arr[i]-i!==diff){
+//             console.log("missing element is ",i+diff)
+//             break;
+//         }
+//     }
     
 
-}
+// }
 // findMissingElementunsorted(arr)
 
 let arr = [6,7,8,9,10,11,15,16,17,18]
@@ -102,4 +102,36 @@ function findmultipleMissing(arr){
         }
     }
 }
-findmultipleMissing(arr)
+// findmultipleMissing(arr)
+
+let unsorted = [6,7,8,9,10,11,15,16,17,18]
+//now using hasing 
+function findmax(arr){
+    let max =arr[0]
+    for(let i=0;i<arr.length;i++){
+        if(arr[i]>max){
+            max=arr[i]
+        }
+
+    }
+    return max;
+}
+
+function findmissingelement(arr){
+   const maxsize = findmax(arr);
+   const hasarry = new Array(maxsize)
+   for(let i = 0;i<=arr.length;i++){
+         
+           hasarry[arr[i]]=1;
+         
+   }
+ 
+
+
+   for(let i=6;i<hasarry.length-1;i++){
+     if(hasarry[i]!=1){
+        console.log(i);
+     }
+   }
+}
+findmissingelement(unsorted)
