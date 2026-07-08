@@ -14,8 +14,8 @@ function findpairsum(arr,k){
 
 
 //using hash 
-
-let ex =[6,3,8,10,16,7,5,2,9,14]
+// timecomplexity = O(n) 
+let ex =[1,3,4,5,6,8,9,10,12,14]
 function findPair(arr,sum){
     let hash  ={};
     for(let i=0;i<arr.length;i++){
@@ -27,4 +27,4 @@ function findPair(arr,sum){
         hash[arr[i]]=true
     }
 }
-findPair(arr,10)
+findPair(arr,15)
