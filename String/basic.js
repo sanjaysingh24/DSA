@@ -4,62 +4,82 @@
 // let s = 'sanjay'
 let i;
 // for(i=0;i<s.length;i++){
-    
+
 // }
 // console.log(i)
 
 
 //changing upper case to lower case
-function changeupper(s){
-    let result  ="";
-    for(let i=0;i<s.length;i++){
-        
+function changeupper(s) {
+    let result = "";
+    for (let i = 0; i < s.length; i++) {
+
         let code = s.charCodeAt(i)
-        if(code>=97 && code<=127){
-            result +=String.fromCharCode(code-32);
-        }else{
-            result+=s[i]
+        if (code >= 97 && code <= 127) {
+            result += String.fromCharCode(code - 32);
+        } else {
+            result += s[i]
         }
-        
-       
+
+
     }
     console.log(result)
 }
 // changeupper(s)
-let s ="SANJaY"
-function changelower(s){
+let s = "Hanuman"
+function changelower(s) {
     let result = "";
-    for(let i =0;i<s.length;i++){
+    for (let i = 0; i < s.length; i++) {
         let code = s.charCodeAt(i)
         console.log(code)
-        if(code>=65 && code<97){
-            result+=String.fromCharCode(code+32)
-        }else{
-            result+=s[i]
+        if (code >= 65 && code < 97) {
+            result += String.fromCharCode(code + 32)
+        } else {
+            result += s[i]
         }
 
 
     }
-console.log(result)
-    
+    console.log(result)
+
 }
 // changelower(s)
 
 //now toggle 
-function togglealphabates(s){
-    let result =""
-    for(let i=0;i<s.length;i++){
+function togglealphabates(s) {
+    let result = ""
+    for (let i = 0; i < s.length; i++) {
         let code = s.charCodeAt(i);
-        if(code>=65 && code<97){
-            result +=String.fromCharCode(code+32)
+        if (code >= 65 && code < 97) {
+            result += String.fromCharCode(code + 32)
         }
-        else if(code>=97 && code<123){
-            result+=String.fromCharCode(code-32)
+        else if (code >= 97 && code < 123) {
+            result += String.fromCharCode(code - 32)
         }
-        else{
-            restult+=s[i]
+        else {
+            restult += s[i]
         }
     }
     console.log(result)
 }
-togglealphabates(s)
+// togglealphabates(s)
+
+//vowels ={a,e,i,o,u}
+let map = new Map([["a", 97], ["e", 101], ["i", 105], ["o", 111], ["u", 117],["A",65],["E",69],["I",73],["O",79],["U",85]])
+//contants=remainings
+function countinvowels(s) {
+    let vowel = 0;
+    let constant = 0;
+    for (let i = 0; i < s.length; i++) {
+        let code = s.charCodeAt(i)
+        if (code == map.get(s[i])) {
+            vowel++;
+        }
+        else {
+            constant++;
+        }
+    }
+    console.log(vowel);
+    console.log(constant)
+}
+countinvowels(s)
