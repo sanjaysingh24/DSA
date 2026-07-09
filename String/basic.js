@@ -82,4 +82,19 @@ function countinvowels(s) {
     console.log(vowel);
     console.log(constant)
 }
-countinvowels(s)
+// countinvowels(s)
+//count words 
+let myword = "hello sanju baba how are you"
+function countword(myword){
+    let word=0;
+    for(let i=0;i<myword.length;i++){
+        if(myword[i]!==" " && (i===0 || myword[i-1]===" ") ){
+            word++;
+        }
+            
+        
+    }
+
+    console.log(word)
+}
+countword(myword)
