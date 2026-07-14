@@ -129,3 +129,15 @@ function checkvalidation(word){
     }
 }
 // checkvalidation("samnjau")
+
+
+//reverse a string
+const mystring = "sanjay"
+function reversestring(mystring){
+    let result  = "";
+    for(let i=mystring.length-1;i>=0;i--){
+         result+= mystring[i];
+    }
+console.log(result)
+}
+// reversestring(mystring)
