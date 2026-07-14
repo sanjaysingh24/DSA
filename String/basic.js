@@ -84,7 +84,7 @@ function countinvowels(s) {
 }
 // countinvowels(s)
 //count words 
-let myword = "hello sanju baba how are you"
+let myword = "hello sanju baba how are you iamfine"
 function countword(myword){
     let word=0;
     for(let i=0;i<myword.length;i++){
@@ -97,4 +97,35 @@ function countword(myword){
 
     console.log(word)
 }
-countword(myword)
+// countword(myword)
+
+
+//validate a string
+function validString(word){
+
+    for(let i=0;i<word.length;i++){
+        let code = word.charCodeAt(i);
+        
+
+        if(!((code>=65&&code<=90)|| (code>=97 && code<=122))){
+        return false
+        }
+        
+        
+    }
+    return true;
+}
+// const check = validString("sanjay12")
+//let check the string is valid or not
+
+function checkvalidation(word){
+
+    const check = validString(word);
+    if(check){
+        console.log("given string is valid")
+    }
+    else{
+        console.log("string is not valid")
+    }
+}
+checkvalidation("samnjau")
