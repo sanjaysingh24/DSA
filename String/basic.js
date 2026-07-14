@@ -128,4 +128,4 @@ function checkvalidation(word){
         console.log("string is not valid")
     }
 }
-checkvalidation("samnjau")
+// checkvalidation("samnjau")
