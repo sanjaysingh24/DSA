@@ -11,11 +11,11 @@ function findduplicate(word){
      }
    }
 console.log(count);
-//    for(let char in count){
-//     if(count[char]>1){
-//         console.log( `${char} -> ${count[char]}` )
-//     }
-//    }
+   for(let char in count){
+    if(count[char]>1){
+        console.log( `${char} -> ${count[char]}` )
+    }
+   }
 }
 
 findduplicate(word)
