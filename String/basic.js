@@ -142,4 +142,4 @@ console.log(result)
 }
 
 
-// reversestring(mystring)
+reversestring(mystring)
