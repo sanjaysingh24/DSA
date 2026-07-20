@@ -18,12 +18,37 @@ function checkpalindrome(word){
         return false
     }
 }
-const word = "racecar"
-const result = checkpalindrome(word);
+// const word = "racecar"
+// const result = checkpalindrome(word);
+// if(result){
+//     console.log("String is Palindrome")
+// }
+// else{
+
+//     console.log("String is not palindrome")
+// }
+
+//another method
+const word ="racecar"
+
+function check(word){
+    let i=0;
+    let j =word.length-1
+    while(i<j){
+        if(word[i]!==word[j]){
+        return false
+        }
+        i++;
+        j--;
+
+    }
+    return true
+}
+const result = check(word)
+
 if(result){
-    console.log("String is Palindrome")
+    console.log("string is Palindrome")
 }
 else{
-
-    console.log("String is not palindrome")
+    console.log("String is not Palindrome")
 }
