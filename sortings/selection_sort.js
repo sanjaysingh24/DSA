@@ -13,7 +13,8 @@ function selection_sort(arr){
      [arr[i],arr[k]]=[arr[k],arr[i]]
    
     
+     console.log(arr);
+     break;
     }
-console.log(arr);
 }
 selection_sort(arr)
